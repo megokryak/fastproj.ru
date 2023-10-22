@@ -1,0 +1,115 @@
+//Вот этот файл как раз отвечает за настройки смартгрида
+@import "smart-grid.less";
+
+@color_light_red:#fa8c84;
+@color_dark_red: #ba2828;
+@color_dark_blue: #0c3c60;
+@color_light_gray: #ccc;
+.wrapper {
+  .wrapper();
+}
+.reset();
+
+@media (prefers-color-scheme: dark){
+
+};
+@media (prefers-color-scheme: light) {
+
+};
+
+html {
+  scroll-behavior: smooth; /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */
+}
+img {
+  width: 100%;
+}
+
+body {
+font-size: 18px;
+}
+.wrapper {
+  .xs(padding-left, 10px);
+  .xs(padding-right, 10px);
+}
+a:visited {
+  color:inherit;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+//Просто отступы
+.margin_left_10 {
+  margin-left: 10px;
+}
+.margin_left_20 {
+  margin-left: 20px;
+}
+.margin_left_30 {
+  margin-left: 30px;
+}
+.margin_top_30 {
+  margin-top: 30px;
+}
+.margin_top_60 {
+  margin-top: 60px;
+}
+.margin_top_40 {
+  margin-top: 40px;
+}
+.padding_top_10 {
+  padding-top: 10px;
+}
+.padding_bottom_10 {
+  padding-bottom: 10px;
+}
+.padding_top_30  {
+  padding-top: 30px;
+}
+.padding_top_40 {
+  padding-top: 40px;
+}
+.padding_top_60 {
+  padding-top: 60px;
+}
+.padding_top_20 {
+  padding-top: 20px;
+}
+.margin_top_50 {
+  margin-top: 50px;
+}
+.margin_bottom_40 {
+  margin-bottom: 40px;
+}
+.padding_bottom_20 {
+  padding-bottom: 20px;
+}
+.padding_bottom_15 {
+  padding-bottom: 15px;
+}
+.padding_bottom_40 {
+  padding-bottom: 40px;
+}
+.padding_bottom_30 {
+  padding-bottom: 30px;
+}
+.padding_bottom_60 {
+  padding-bottom: 60px;
+}
+.margin_bottom_20 {
+  margin-bottom: 20px;
+}
+
+//Сам кода
+.text_css_code {
+  color: red;
+  .sm(color, green);
+  .md(color, blue);
+  .bg(color, gray);
+  .gg(color, yellow);
+  .ggs(color, red);
+}
