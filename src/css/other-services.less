@@ -1,0 +1,126 @@
+.other-services {
+  background-color: var(--colorDark);
+}
+
+.other-services__container {
+  position: relative;
+}
+
+.other-services__title {
+  color: var(--colorWhite);
+  text-align: center;
+}
+
+.other-services__list {
+  margin: 45px 0 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+
+  @media (min-width: @d-width) {
+    margin: 54px -51px 0 0;
+  }
+}
+
+.other-services__item {
+  flex: 1 1 0;
+}
+
+.other-services__link {
+  text-decoration: none;
+  color: var(--colorWhite);
+}
+
+.other-services__link b {
+  display: block;
+  @media (min-width: @d-width) {
+    font-size: 21px;
+    line-height: 28px;
+  }
+}
+
+.other-services__link span {
+  display: block;
+  
+  @media (min-width: @d-width) {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.other-services__item {
+  transition: 0.3s;
+
+  @media (min-width: @d-width) {
+    padding-left: 51px;
+    position: relative;
+  }
+}
+
+.other-services__item:hover .other-services__link {
+  transition: 0.3s;
+  color: var(--colorBlue);
+}
+
+.other-services__item:hover::before {
+  @media (min-width: @d-width) {
+    content: "";
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    background-image: url("/assets/img/Arrow_left_hover.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+  }
+}
+
+.other-services__pagination-list {
+  display: none;
+
+  @media (min-width: @t-width) {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0 50px;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+  }
+
+  @media (min-width: @d-width) {
+    top: 135px;
+  }
+}
+
+
+.other-services__pagination-button {
+  border: none;
+  background-color: var(--colorGray);
+}
+
+.other-services__pagination-button--prev,
+.other-services__pagination-button--next {
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  background-image: url("/assets/img/arrow_left.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: @t-width) {
+    width: 50px;
+    height: 50px;
+    background-image: url("/assets/img/Arrow_rew.svg");
+  }
+}
+
+.other-services__pagination-button--next {
+  transform: rotate(180deg);
+  
+}

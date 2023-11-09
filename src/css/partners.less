@@ -1,0 +1,42 @@
+.partners {
+  border-bottom: 1px solid var(--border);
+}
+
+.partners__title {
+  text-align: center;
+}
+
+.partners__list {
+  list-style-type: none;
+  margin: 35px 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.partners__items {
+  padding: 7px;
+}
+
+.partners__text {
+  margin: 24px 0 0 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 19px;
+  color: var(--colorDark);
+  text-align: center;
+
+  @media (min-width: @t-width) {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 45px 0 0 0;
+  }
+}
+
+.partners__logo {
+  @media (min-width: @t-width) {
+    height: 62px;
+  }
+}

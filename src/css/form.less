@@ -1,0 +1,280 @@
+.form {
+  background-color: var(--colorBlack);
+}
+
+.form__container {
+  @media (min-width: @t-width) {
+    padding: 0 272px;
+  }
+
+  @media (min-width: @d-width) {
+    padding: 0 85px 0 289px;
+  }
+}
+
+.form__title {
+  color: var(--colorWhite);
+  text-align: center;
+  
+  @media (min-width: @d-width) {
+    text-align: left;
+  }
+}
+
+.form__text {
+  color: var(--colorWhite);
+  text-align: center;
+  margin: 4px 0 0 0;
+  padding: 0 5px;
+
+  @media (min-width: @d-width) {
+    text-align: left;
+  }
+}
+
+.form__date {
+  @media (min-width: @t-width) {
+    position: relative;
+  }
+}
+
+.form__fieldset {
+  border: none;
+  padding: 0;
+  margin: 11px 0 0 0;
+
+  @media (min-width: @t-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @d-width) {
+    margin: 7px 0 0 0;
+  }
+}
+
+.form__label {
+  @media (min-width: @t-width) {
+    width: 100%;
+  }
+}
+
+.form__label:not(:first-child) {
+  display: block;
+  margin: 23px 0 0 0;
+
+  @media (min-width: @t-width) {
+    margin: 20px 0 0 0;
+  }
+}
+
+.form__fieldset .form__label--name {
+  @media (min-width: @d-width) {
+    margin-top: 0;
+  }
+}
+
+.form__label--email,
+.form__label--phone,
+.form__label--company,
+.form__label--inn {
+  @media (min-width: @t-width) {
+    min-width: 318px;
+    flex-basis: 318px;
+  }
+}
+
+
+.form__input {
+  display: block;
+  color: var(--colorInputText);
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid var(--borderInput);
+  border-radius: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+
+  @media (min-width: @t-width) {
+    line-height: 17px;
+  }
+}
+
+.form__input::placeholder {
+  color: var(--colorInputText);
+}
+
+.form__textarea {
+  display: block;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 21px;
+  color: var(--colorInputText);
+  height: 110px;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid var(--borderInput);
+  border-radius: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+
+  @media (min-width: @t-width) {
+    height: 132px;
+  }
+}
+
+.form__textarea::placeholder {
+  color: var(--colorInputText);
+}
+
+.form__file-content {
+  position: relative;
+  margin: 22px 0 0 0;
+
+  @media (min-width: @t-width) {
+    margin: 20px 0 0 0;
+    width: 100%;
+  }
+}
+
+.form__file {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.form__file-check {
+  color: var(--colorBlue);
+  padding: 0 0 0 26px;
+  position: relative;
+
+  @media (min-width: @t-width) {
+    font-size: 14px;
+    line-break: 17px;
+  }
+}
+
+.form__file-check::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/img/skrepka.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__file-info {
+  color: var(--colorGray);
+}
+
+.form__label-checkbox {
+  margin-top: 11px;
+  display: block;
+
+  @media (min-width: @t-width) {
+    width: 65%;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 29px;
+  }
+}
+
+.form__label-checkbox span {
+  margin: 0;
+  display: block;
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: 400;
+  color: var(--colorWhite);
+  padding: 0 0 0 28px;
+  position: relative;
+
+  @media (min-width: @t-width) {
+    letter-spacing: 0.095em;
+    padding: 0 0 0 31px
+  }
+}
+
+.form__label-checkbox span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid var(--colorWhite);
+
+  @media (min-width: @t-width) {
+    top: -1px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.form__label-checkbox input[type="checkbox"]:checked + span::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-color: var(--colorBlue);
+
+  @media (min-width: @t-width) {
+    top: 2px;
+    left: 2.5px;
+  }
+}
+
+.form__submit {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 500;
+  margin-top: 29px;
+  letter-spacing: 0.06em;
+  padding-right: 31px;
+  position: relative;
+
+  @media (min-width: @t-width) {
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    font-size: 18px;
+    line-height: 22px;
+    padding-right: 65px;
+  }
+}
+
+.form__submit::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  width: 4px;
+  height: 9px;
+  background-image: url(/assets/img/strelka.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: @t-width) {
+    width: 16px;
+    height: 16px;
+    right: 29px;
+    top: calc(50% - 8px);
+    background-image: url(/assets/img/icon_button-arrow_t.svg);
+  }
+}

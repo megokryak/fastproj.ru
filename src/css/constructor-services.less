@@ -1,0 +1,135 @@
+.constructor-services__title {
+  text-align: center;
+
+  @media (min-width: @d-width) {
+    width: 100%;
+    padding-left: 290px;
+  }
+}
+
+.constructor-services__container {
+  @media (min-width: @d-width) {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.constructor-services__img {
+  margin-top: 20px;
+
+  @media (min-width: @t-width) {
+    border-radius: 36px 36px 36px 0px;
+  }
+
+  @media (min-width: @d-width) {
+    margin-top: 65px;
+    width: auto;
+    height: auto;
+    align-self: flex-start;
+    border-radius: 0;
+  }
+}
+
+.constructor-services__wrapper {
+  margin-top: 20px;
+
+  @media (min-width: @d-width) {
+    flex: 1 1 0;
+    margin-top: 46px;
+    margin-left: 143px;
+  }
+}
+
+.constructor-services__text {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @d-width) {
+    margin-top: 18px;
+    font-size: 18px;
+    line-height: 29px;
+  }
+}
+
+.constructor-services__list {
+  list-style-type: none;
+  margin: 20px 0 0 0;
+  padding: 0;
+
+  @media (min-width: @d-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 28px;
+    margin-left: -51px;
+    margin-top: 62px;
+  }
+}
+
+.constructor-services__link {
+  text-decoration: none;
+  color: var(--colorDark);
+}
+
+.constructor-services__item {
+  transition: 0.3s;
+
+  @media (min-width: @d-width) {
+    padding-left: 51px;
+    position: relative;
+  }
+}
+
+.constructor-services__item:hover .constructor-services__link {
+  transition: 0.3s;
+  color: var(--colorBlue);
+}
+
+.constructor-services__item:not(:first-child) {
+  margin-top: 15px;
+
+  @media (min-width: @d-width) {
+    margin-top: 0;
+  }
+}
+
+.constructor-services__item:nth-child(n + 3) {
+  margin-top: 17px;
+}
+
+//.constructor-services__item--active .constructor-services__link {
+//  color: var(--colorBlue);
+//}
+
+.constructor-services__item:hover::before {
+  @media (min-width: @d-width) {
+    content: "";
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    background-image: url("/assets/img/Arrow_left_hover.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+  }
+}
+
+.constructor-services__link b {
+  font-size: 15px;
+  line-height: 22px;
+  @media (min-width: @t-width) {
+    font-size: 21px;
+    line-height: 28px;
+  }
+}
+
+.constructor-services__link p {
+  margin: 5px 0 0 0;
+  padding: 0;
+
+  @media (min-width: @d-width) {
+    margin: 10px 0 0 0; 
+  }
+}

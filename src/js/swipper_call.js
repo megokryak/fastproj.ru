@@ -1,71 +1,60 @@
-
 document.addEventListener("DOMContentLoaded", function(event) {
-
-  var mySwiper = new Swiper('#swiper-container-tver', {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    autoplay: {
-      delay: 4500,
-    },
-//    loop: true,
-    speed: 400,
-    lazy: true,
-  //  observer: true,
-  //  observeParents: true,
-    pagination: {
-     el: '.swiper-pagination-bullet',
-     clickable: true,
-    },
-
+  var portfolio = new Swiper('#portfolio', {
+    slidesPerView: "auto",
+    //slidesPerView: 14,
+    //  centeredSlides: true,
+    // slidesPerView: 14,
+    spaceBetween: 15,
+    clickable: true,
     navigation: {
-      nextEl: '.swiper-button-next-photo',
-      prevEl: '.swiper-button-prev-photo',
+      nextEl: '.portfolio__pagination-button--next',
+      prevEl: '.portfolio__pagination-button--prev',
     },
-    on: {
-      init() {
-        document.querySelector('.swiper-button-next-photo').addEventListener('mouseenter', () => {
-          this.autoplay.stop();
-        });
-
-        document.querySelector('.swiper-button-prev-photo').addEventListener('mouseenter', () => {
-          this.autoplay.stop();
-        });
-      }
-    },
-    //clickable: true,
     breakpoints: {
-      900: {
-        slidesPerView: 1,
-        spaceBetween: 0
+      1200: {
+     //   slidesPerView:14,
+        spaceBetween: 15
       },
-      480: {
-        slidesPerView: 1,
-        spaceBetween: 0
+      900: {
+    //        slidesPerView:9.5,
+        spaceBetween: 15
+      },
+      540: {
+     //   slidesPerView: 4.5,
+        spaceBetween: 5
+      },
+      440: {
+     //   slidesPerView:3.5,
+        spaceBetween: 5
       },
     }
   });
 
-  var swiperButton = new Swiper('#swiper-container-button', {
-    slidesPerView: 4,
-    spaceBetween: 30,
-
-    navigation: {
-  //    nextEl: '.swiper-button-next-photo',
-  //    prevEl: '.swiper-button-prev-photo',
-    },
+});
+document.addEventListener("DOMContentLoaded", function(event) {
+  var portfolio = new Swiper('#main_slider', {
+    slidesPerView: 1,
+    spaceBetween: 150,
     clickable: true,
+    navigation: {
+      nextEl: '.promo__pagination-button--next',
+      prevEl: '.promo__pagination-button--prev',
+    },
     breakpoints: {
-      900: {
-        slidesPerView:4,
+      1200: {
+     //   slidesPerView:14,
         spaceBetween: 15
       },
-      // when window width is >= 480px
+      900: {
+    //        slidesPerView:9.5,
+        spaceBetween: 15
+      },
       540: {
-        slidesPerView: 3.5,
+     //   slidesPerView: 4.5,
         spaceBetween: 5
       },
       440: {
-        slidesPerView:2.5,
+     //   slidesPerView:3.5,
         spaceBetween: 5
       },
     }

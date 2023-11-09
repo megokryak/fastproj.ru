@@ -1,0 +1,243 @@
+.plan {
+  background-color: var(--colorLGray);
+}
+
+.plan__title {
+  text-align: center;
+
+  @media (min-width: @t-width) {
+    padding: 0 50px;
+  }
+
+  @media (min-width: @d-width) {
+    padding: 0 230px;
+  }
+}
+
+.plan__list {
+  margin: 39px 0 0 0;
+  padding: 0;
+  list-style-type: none;
+  counter-reset: section 0;
+
+  @media (min-width: @t-width) {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 7fr);
+    column-gap: 0;
+    row-gap: 0;
+  }
+}
+
+.plan__item {
+  padding-left: 51px;
+  position: relative;
+
+  @media (min-width: @t-width) {
+    padding-left: 55px;
+    padding-bottom: 11px;
+  }
+
+  &::before {
+    counter-increment: section 1;
+    content: counter(section);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--colorBlue);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--colorWhite);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+
+    @media (min-width: @t-width) {
+      left: -16px;
+    }
+  }
+}
+
+.plan__item:nth-child(1) {
+  @media (min-width: @t-width) {
+    grid-row-start: 1;
+    grid-column-start: 2;
+  }
+}
+
+.plan__item:nth-child(2) {
+  @media (min-width: @t-width) {
+    grid-row-start: 2;
+  grid-column-start: 1;
+  }
+}
+
+
+.plan__item:nth-child(3) {
+  @media (min-width: @t-width) {
+    grid-row-start: 3;
+    grid-column-start: 2;
+  }
+}
+
+.plan__item:nth-child(4) {
+  @media (min-width: @t-width) {
+    grid-row-start: 4;
+    grid-column-start: 1;
+  }
+}
+
+.plan__item:nth-child(5) {
+  @media (min-width: @t-width) {
+    grid-row-start: 5;
+    grid-column-start: 2;
+  }
+}
+
+.plan__item:nth-child(6) {
+  @media (min-width: @t-width) {
+    grid-row-start: 6;
+  grid-column-start: 1;
+  }
+}
+
+.plan__item:nth-child(7) {
+  @media (min-width: @t-width) {
+    grid-row-start: 7;
+    grid-column-start: 2;
+  }
+}
+
+.plan__item:nth-child(2n) {
+  @media (min-width: @t-width) {
+    text-align: right;
+    padding-left: 0;
+    padding-right: 55px;
+  }
+}
+
+.plan__item:nth-child(2n)::before {
+  @media (min-width: @t-width) {
+    left: auto;
+    right: -16px;
+  }
+}
+
+
+
+.plan__item:not(:first-child)::before {
+  top: 18px;
+}
+
+.plan__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 15px;
+  width: 2px;
+  height: 100%;
+  background-color: var(--colorMGray);
+  z-index: 0;
+
+  @media (min-width: @t-width) {
+    left: -1px;
+  }
+}
+
+.plan__item:nth-child(2n)::after {
+  @media (min-width: @t-width) {
+    left: auto;
+    right: -1px;
+  }
+}
+
+.plan__item:last-child::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 15px;
+  width: 2px;
+  height: 25px;
+  background-color: var(--colorMGray);
+  z-index: 0;
+
+  @media (min-width: @t-width) {
+    left: -1px;
+  }
+}
+
+.plan__item:not(:first-child) {
+  padding-top: 20px;
+}
+
+.plan__item b {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--colorDark);
+
+  @media (min-width: @t-width) {
+    font-size: 21px;
+    line-height: 28px;
+  }
+}
+
+.plan__sublist {
+  margin: 7px 0 0 0;
+  padding: 0 0 0 19px;
+  list-style-type: disc;
+
+  @media (min-width: @t-width) {
+    margin: 17px 0 0 0;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.plan__sublist-item {
+  position: relative;
+  color: var(--colorDark);
+
+  @media (min-width: @t-width) {
+    font-size: 14px;
+    line-height: 22px;
+    padding-left: 22px;
+    position: relative;
+  }
+}
+
+.plan__sublist-item::before {
+  @media (min-width: @t-width) {
+    content: "";
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: var(--colorDark);
+    position: absolute;
+    top: 10px;
+    left: 11px;
+  }
+}
+
+.plan__item:nth-child(2n) ul li {
+  align-self: end;
+}
+
+.plan__sublist-item:not(:first-child) {
+  margin-top: 6px;
+
+  @media (min-width: @t-width) {
+    margin-top: 10px;
+  }
+}
+
+.plan__sublist-item a {
+  color: var(--colorBlue);
+}

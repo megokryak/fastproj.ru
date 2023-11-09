@@ -1,0 +1,27 @@
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--btnText);
+  background-color: var(--colorBlue);
+  text-transform: uppercase;
+  padding: 14px 22px;
+  border: none;
+  border-radius: 12px 12px 12px 0px;
+  cursor:pointer;
+  transition: 0.4s;
+
+  @media (min-width: @t-width) {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 18px 28px;
+    border-radius: 14px 14px 14px 0px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--colorHoverBlue);
+    transition: 0.4s;
+  }
+}

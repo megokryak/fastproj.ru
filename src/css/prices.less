@@ -1,0 +1,138 @@
+.price__title {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.price__description {
+  padding-top: 30px;
+  margin-bottom: -20px;
+
+  @media (min-width: @t-width) {
+    padding-top: 50px;
+    margin-bottom: 0;
+  }
+}
+
+.price__list-service {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: var(--colorLGray);
+  padding: 60px 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.price__item-service {
+  padding: 60px 15px;
+
+  @media (min-width: @t-width) {
+    padding: 60px 120px;
+  }
+
+  @media (min-width: @d-width) {
+    padding: 60px 290px;
+  }
+}
+
+.price__item-service:nth-child(2n) {
+  background-color: var(--colorWhite);
+}
+
+.price__container {
+  padding-bottom: 60px;
+}
+
+.price__container p,
+.price__item-service p {
+  font-size: 14px;
+  line-height: 22px;
+
+  @media (min-width: @t-width) {
+    font-size: 18px;
+    line-height: 29px;
+  }
+}
+
+.price__item-service p {
+  margin-top: 50px;
+}
+
+.price__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  margin: 50px 0 0 0;
+  list-style-type: none;
+
+  @media (min-width: @t-width) {
+    flex-direction: row;
+  }
+}
+
+.price__item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-top: 1px solid var(--colorMGray);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+
+  @media (min-width: @t-width) {
+    border-top: none;
+    border-bottom: none;
+  }
+}
+
+.price__item:not(:first-child) {
+  @media (min-width: @t-width) {
+    padding-left: 30px;
+    position: relative;
+  }
+}
+
+.price__item:not(:first-child)::before {
+  @media (min-width: @t-width) {
+    content: "";
+    width: 1px;
+    height: 80%;
+    background-color: var(--colorMGray);
+    position: absolute;
+    top: 10%;
+    left: 0;
+  }
+}
+
+.price__item:last-child {
+  border-bottom: 1px solid var(--colorMGray);
+
+  @media (min-width: @t-width) {
+    border-bottom: none;
+  }
+}
+
+.price__item-title {
+  font-size: 30px;
+  line-height: 40px;
+  color: var(--colorDark);
+}
+
+.price__item h3 {
+  color: var(--colorBlue);
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.price__item b {
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--colorDark);
+  font-weight: 500;
+
+  @media (min-width: @t-width) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}

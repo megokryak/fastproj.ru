@@ -6,11 +6,11 @@
     <title>FastProject - Конструкторское бюро общего машиностроения</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet"href="/assets/css/swiper.min.css">
-    <!--<link  rel="stylesheet"   href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />-->
+    <link  rel="stylesheet"   href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   </head>
   <body class="page theme_white">
     <!--Header start-->
-    <header class="page__header header header--nojs header--closed-menu header--fixed">
+    <header class="page__header header header--nojs header--closed-menu header--fixed header--color">
       <div class="main-nav__wrapper-tablet container">
         <a href="tel:89055600075" class="main-nav__link">8 (905) 560 00 75</a>
         <button class="main-nav__callback-phone btn-link">Заказать обратный звонок</button>
@@ -121,52 +121,113 @@
         </div>
       </nav>
     </header>
-    <main class="page__main main">
-      <h1 class="visually-hidden">FastProject - Конструкторское бюро общего машиностроения</h1>
-      <section class="main__promo promo">
-        <div class="promo__conteiner container swiper" id="main_slider">
-          <div class="swiper-wrapper">
-            <ul class="promo__slider-list swiper-slide">
-              <li class="promo__slider-item">
-                <h2 class="promo__title">Разработка и оптимизация<br> технологических процессов</h2>
-                <ul class="promo__list-description">
-                  <li class="promo__item-description">Разработка и оптимизация существующих технологических процессов</li>
-                  <li class="promo__item-description">Разработка технологической оснастки</li>
-                  <li class="promo__item-description">Подбор оборудования и инструмента</li>
-                </ul>
-                <a href="#" class="promo__link btn">Заказать проект</a>
-                <picture>
-                  <img src="/assets/img/img_1_screen1920.png" alt="Разнесенный вид" class="promo__img" width="360" height="339">
-                </picture>
+    <main class="page__constructor constructor">
+      <ul class="constructor__breadcrumbs breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a href="index.html" class="breadcrumbs__link">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="services.html" class="breadcrumbs__link">Услуги</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="constructor.html" class="breadcrumbs__link breadcrumbs__link--active">Конструкторские услуги</a>
+        </li>
+      </ul>
+      <section class="constructor__constructor-services constructor-services">
+        <div class="constructor-services__container container">
+          <h1 class="constructor-services__title">Конструкторские услуги</h1>
+          <picture>
+            <source media="(min-width: 1920px)" srcset="/assets/img/constructor.jpg">
+            <source media="(min-width: 1200px)" srcset="/assets/img/photo_1.jpg">
+            <img src="/assets/img/photo_1.jpg" alt="Конструкторские услуги" class="constructor-services__img" width="603" height="900">
+          </picture>
+          <div class="constructor-services__wrapper">
+            <p class="constructor-services__text">Наша компания выполняет конструкторское проектирование деталей, частей оборудования на заказ под изготовление, сертификацию, презентацию и другие цели наших клиентов. Разработка конструкторской документации в сфере общего машиностроения — это основная специализация нашей компании.</p>
+            <p class="constructor-services__text">По каждой услуге мы создали отдельную страницу, где подробно написали для чего она, как оценивается, в каком порядке выполняется, на что нужно обратить внимание. Кликайте на названия интересующих услуг, чтобы получить дополнительные данные о порядке оформления и разработки.</p>
+            <ul class="constructor-services__list">
+              <li class="constructor-services__item">
+                <a href="" class="constructor-services__link">
+                  <b>Разработка конструкторской документации</b>
+                  <p>Все чертежи и конструкторская документация (КД) разрабатываются согласно нормам ЕСКД</p>
+                </a>
               </li>
-              <li class="promo__slider-item">
-                <h2 class="promo__title">Разработка и оптимизация<br> технологических процессов</h2>
-                <ul class="promo__list-description">
-                  <li class="promo__item-description">Разработка и оптимизация существующих технологических процессов</li>
-                  <li class="promo__item-description">Разработка технологической оснастки</li>
-                  <li class="promo__item-description">Подбор оборудования и инструмента</li>
-                </ul>
-                <a href="#" class="promo__link btn">Заказать проект</a>
-                <picture>
-                  <img src="/assets/img/img_1_screen1920.png" alt="Разнесенный вид" class="promo__img" width="360" height="339">
-                </picture>
+              <li class="constructor-services__item">
+                <a href="" class="constructor-services__link">
+                  <b>Разработка чертежей КМД</b>
+                  <p>Разрабатываются на основании раздела КМ в составе проекта для вновь возводимых металлоконструкций</p>
+                </a>
+              </li>
+              <li class="constructor-services__item">
+                <a href="" class="constructor-services__link">
+                  <b>Проектирование сварных конструкций</b>
+                  <p>Разработка изделий или устройств с нуля на основании техзадания</p>
+                </a>
+              </li>
+              <li class="constructor-services__item constructor-services__item--active">
+                <a href="article.html" class="constructor-services__link">
+                  <b>Оцифровка чертежей</b>
+                  <p>Векторизация и оцифровка — это способы перевода графических материалов в электронный вид с применением современного ПО</p>
+                </a>
+              </li>
+              <li class="constructor-services__item">
+                <a href="" class="constructor-services__link">
+                  <b>Конструкторские решения для стартапов</b>
+                  <p>Разработка конструкции или дизайна устройства для стартапов</p>
+                </a>
+              </li>
+              <li class="constructor-services__item">
+                <a href="" class="constructor-services__link">
+                  <b>Проектирование механизмов</b>
+                  <p>Разработка внешнего облика и конструктива объекта проектирования с учётом поставленных задач</p>
+                </a>
+              </li>
+              <li class="constructor-services__item">
+                <a href="" class="constructor-services__link">
+                  <b>Проектирование штампов и пресс-форм</b>
+                  <p>Разработка штампов и пресс-форм с нуля на основании техзадания</p>
+                </a>
+              </li>
+              <li class="constructor-services__item">
+                <a href="" class="constructor-services__link">
+                  <b>Расчет прочности</b>
+                  <p>Выполняем расчеты статической прочности деталей, сосудов под давлением, трубопроводов, металлоконструкций</p>
+                </a>
+              </li>
+              <li class="constructor-services__item">
+                <a href="" class="constructor-services__link">
+                  <b>Проектирование оборудования</b>
+                  <p>Разработка внешнего облика и конструктива объекта проектирования</p>
+                </a>
+              </li>
+              <li class="constructor-services__item">
+                <a href="" class="constructor-services__link">
+                  <b>Импортозамещение</b>
+                  <p>Разработка и производство российских аналогов импортных устройств, приборов и механизмов на территории России и для российского рынка</p>
+                </a>
+              </li>
+              <li class="constructor-services__item">
+                <a href="" class="constructor-services__link">
+                  <b>Разработка корпусов</b>
+                  <p>Разработка корпусов всех видов</p>
+                </a>
+              </li>
+              <li class="constructor-services__item">
+                <a href="" class="constructor-services__link">
+                  <b>Реверс-инжиниринг</b>
+                  <p>Изготовление аналогов или при замене изношенных и повреждённых образцов — одна из самых часто запрашиваемых услуг, в которой у наших специалистов накоплен большой опыт</p>
+                </a>
+              </li>
+              <li class="constructor-services__item">
+                <a href="" class="constructor-services__link">
+                  <b>Разработка эскизных проектов</b>
+                  <p>Все материалы оформляются по нормам ЕСКД, проходят технический и нормативный контроль</p>
+                </a>
               </li>
             </ul>
-          </div>
-        </div>
-        <div class="promo__container-pagination container">
-          <div class="promo__pagination-wrapper">
-            <button class="promo__pagination-button promo__pagination-button--prev"><span class="visually-hidden">Предыдущий слайд</span></button>
-            <ul class="promo__pagination-list">
-              <li class="promo__pagination-item"><button class="promo__pagination-button promo__pagination-button--active"><span class="visually-hidden">1 слайд</span></button></li>
-              <li class="promo__pagination-item"><button class="promo__pagination-button"><span class="visually-hidden">2 слайд</span></button></li>
-              <li class="promo__pagination-item"><button class="promo__pagination-button"><span class="visually-hidden">3 слайд</span></button></li>
-            </ul>
-            <button class="promo__pagination-button promo__pagination-button--next"><span class="visually-hidden">Следующий слайд</span></button>
           </div>
         </div>
       </section>
-      <section class="main__advantages advantages">
+      <section class="constructor__advantages advantages">
         <div class="advantages__container container">
           <h3 class="advantages__title">Преимущества работы с нами</h3>
           <ul class="advantages__list">
@@ -184,9 +245,8 @@
             <li class="advantages__item advantages__item--third">
               <b class="advantages__item-title">Оперативная связь</b>
               <p class="advantages__item-description">Менеджер всегда на связи <br>по телефону и whatsapp:</p>
-              <a href="tel:89055600075" class="advantages__link">8 (905) 560 00 75</a>
-              <a href="https://wa.me/79055600075" class="advantages__whatsapp">whatsapp</a>
-              <a href="https://t.me/fastproj" class="advantages__telegramm">telegramm</a>
+              <a href="tel:88001234567" class="advantages__link">8 (800) 123 45 67</a>
+              <a href="#" class="advantages__whatsapp">whatsapp</a>
             </li>
             <li class="advantages__item advantages__item--fouth">
               <b class="advantages__item-title">Гарантия</b>
@@ -195,132 +255,16 @@
           </ul>
         </div>
       </section>
-      <section class="main__services services">
-        <div class="services__container container">
-          <h2 class="services__title">Услуги</h2>
-          <ol class="services__list">
-            <li class="services__item services__item--first">
-              <a href="constructor.html" class="services__link">
-                <img src="/assets/img/kb.jpg" srcset="/assets/img/kb@2x.jpg" alt="Работа КБ" class="services__img" width="330" height="275">
-                <span class="services__text">Конструкторские услуги</span>
-              </a>
-            </li>
-            <li class="services__item services__item--second">
-              <a href="#" class="services__link">
-                <img src="/assets/img/reducer.jpg" srcset="/assets/img/reducer@2x.jpg" alt="Редуктор" class="services__img" width="330" height="275">
-                <span class="services__text">3D <br>-моделирование и промышленный дизайн</span>
-              </a>
-            </li>
-            <li class="services__item services__item--third">
-              <a href="#" class="services__link">
-                <img src="/assets/img/drawing.jpg" srcset="/assets/img/drawing@2x.jpg" alt="Чертежи" class="services__img" width="330" height="275">
-                <span class="services__text">Технологические услуги</span>
-              </a>
-            </li>
-            <li class="services__item services__item--fouth">
-              <a href="#" class="services__link">
-                <img src="/assets/img/photo_4.jpg" srcset="/assets/img/photo_4@2x.jpg" alt="Измерения" class="services__img" width="330" height="275">
-                <span class="services__text">Измерительные услуги</span>
-              </a>
-            </li>
-            <li class="services__item services__item--fifth">
-              <a href="#" class="services__link">
-                <img src="/assets/img/photo_5.jpg" srcset="/assets/img/photo_5@2x.jpg" alt="Сертификация" class="services__img" width="330" height="275">
-                <span class="services__text">Разработка документации  для регистрации и сертификации продукции</span>
-              </a>
-            </li>
-            <li class="services__item services__item--sixth" >
-              <a href="#" class="services__link">
-                <img src="/assets/img/photo_6.jpg" srcset="/assets/img/photo_6@2x.jpg" alt="Тезническая документация" class="services__img" width="330" height="275">
-                <span class="services__text">Техническая документация</span>
-              </a>
-            </li>
-          </ol>
+      <section class="constructor__message message">
+        <div class="message__container container">
+          <h2 class="message__title">Напишите нам</h2>
+          <p class="message__text">Если у вас остались вопросы по проекту, заполните форму, и наш менеджер свяжется с Вами и подробно проконсультирует</p>
+          <button type="button" class="message__button btn">Задать вопрос</button>
         </div>
       </section>
-      <section class="main__progress progress">
-        <div class="progress__container container">
-          <h2 class="visually-hidden">Достижения</h2>
-          <ul class="progress__list">
-            <li class="progress__item">
-              <b>230</b>
-              <p>довольных<br>клиентов</p>
-            </li>
-            <li class="progress__item">
-              <b>>50</b>
-              <p>профессионалов<br>в команде</p>
-            </li>
-            <li class="progress__item">
-              <b>320</b>
-              <p>выполненных<br>проектов</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="main__plan plan">
-        <div class="plan__container container">
-          <h2 class="plan__title">Порядок выполнения конструкторских работ</h2>
-          <ol class="plan__list">
-            <li class="plan__item">
-              <b>Сбор исходных данных</b>
-              <ul class="plan__sublist">
-                <li class="plan__sublist-item"><a href="#">Техническое задание</a> на проектирование</li>
-                <li class="plan__sublist-item">Эскиз / Фото / Видео аналогов</li>
-                <li class="plan__sublist-item">Образцы деталей</li>
-              </ul>
-            </li>
-            <li class="plan__item">
-              <b>Оценка задания</b>
-              <ul class="plan__sublist">
-                <li class="plan__sublist-item">Уточнения по ТЗ</li>
-                <li class="plan__sublist-item"> Встреча с инженером-конструктором, при необходимости</li>
-                <li class="plan__sublist-item">Расчёт объема, бюджета и сроков выполнения</li>
-              </ul>
-            </li>
-            <li class="plan__item">
-              <b>Документальное оформление</b>
-              <ul class="plan__sublist">
-                <li class="plan__sublist-item">Согласование и подписание <a href="#">Договора</a> и приложений к нему</li>
-                <li class="plan__sublist-item">Оплата</li>
-              </ul>
-            </li>
-            <li class="plan__item">
-              <b>Выполнение проекта</b>
-              <ul class="plan__sublist">
-                <li class="plan__sublist-item">3D-моделирование</li>
-                <li class="plan__sublist-item">Согласование</li>
-                <li class="plan__sublist-item">Внесение правок, при необходимости</li>
-                <li class="plan__sublist-item">Разработка КД</li>
-              </ul>
-            </li>
-            <li class="plan__item">
-              <b>Проверка конструкторской документации</b>
-              <ul class="plan__sublist">
-                <li class="plan__sublist-item">Нормоконтроль</li>
-                <li class="plan__sublist-item">Технологический контроль</li>
-              </ul>
-            </li>
-            <li class="plan__item">
-              <b>Предоставление результата разработки</b>
-              <ul class="plan__sublist">
-                <li class="plan__sublist-item">Направление результата в необходимом формате</li>
-                <li class="plan__sublist-item">Приемка комплекта Заказчиком</li>
-              </ul>
-            </li>
-            <li class="plan__item">
-              <b>Запуск и конструкторское сопровождение производства</b>
-              <ul class="plan__sublist">
-                <li class="plan__sublist-item">Изготовление опытного образца</li>
-                <li class="plan__sublist-item">Приемо-сдаточные испытания</li>
-                <li class="plan__sublist-item">Сопровождение серийного производства</li>
-              </ul>
-            </li>
-          </ol>
-        </div>
-      </section>
-      <section class="main__portfolio portfolio">
+      <section class="constructor__portfolio portfolio">
         <div class="portfolio__container container">
-          <h2 class="portfolio__title">Наше портфолио</h2>
+          <h2 class="portfolio__title">Наши работы в области конструкторских услуг</h2>
           <ul class="portfolio__list-group">
             <li class="portfolio__item-group"><a href="#" class="portfolio__item-link portfolio__item-link--active">Все</a></li>
             <li class="portfolio__item-group"><a href="#" class="portfolio__item-link">Оборудование</a></li>
@@ -343,27 +287,27 @@
           </ul>
           <ul class="portfolio__list-img">
             <li class="portfolio__item-img">
-              <img src="/assets/img/img_1.jpg" srcset="/assets/img/Портфолио/Корпуса/250х2.JPG" alt="Портфолио чертеж" width="290" height="290">
+              <img src="/assets/img/img_1.jpg" srcset="/assets/img/img_1@2x.jpg" alt="Портфолио чертеж" width="290" height="290">
             </li>
             <li class="portfolio__item-img">
-              <img src="/assets/img/Портфолио/Корпуса/Шкаф 7000_2.JPG"  alt="Портфолио чертеж" width="290" height="290">
+              <img src="/assets/img/img_2.jpg"  alt="Портфолио чертеж" width="290" height="290">
             </li>
             <li class="portfolio__item-img">
-              <img src="/assets/img/Портфолио/Корпуса/Корпус.JPG"  alt="Портфолио чертеж" width="290" height="290">
+              <img src="/assets/img/img_3.jpg"  alt="Портфолио чертеж" width="290" height="290">
             </li>
             <li class="portfolio__item-img">
-              <img src="/assets/img/Портфолио/Корпуса/РЖД.JPG"  alt="Портфолио чертеж" width="290" height="290">
+              <img src="/assets/img/img_4.jpg"  alt="Портфолио чертеж" width="290" height="290">
             </li>
             <li class="portfolio__item-img">
-              <img src="/assets/img/Портфолио/Корпуса/Шкаф 7000.JPG"  alt="Портфолио чертеж" width="290" height="290">
+              <img src="/assets/img/img_5.jpg"  alt="Портфолио чертеж" width="290" height="290">
             </li>
             <li class="portfolio__item-img">
-              <img src="/assets/img/Портфолио/Корпуса/FG.JPG"  alt="Портфолио чертеж" width="290" height="290">
+              <img src="/assets/img/img_6.jpg"  alt="Портфолио чертеж" width="290" height="290">
             </li>
           </ul>
         </div>
       </section>
-      <section class="main__reviews reviews">
+      <section class="constructor__reviews reviews">
         <div class="reviews__container container">
           <h2 class="reviews__title">Отзывы наших клиентов</h2>
           <ul class="reviews__list">
@@ -407,102 +351,9 @@
           <li class="reviews__pagination-item"><button class="reviews__pagination-button reviews__pagination-button--next"><span class="visually-hidden">Следующий слайд</span></button></li>
         </ul>
       </section>
-      <section class="main__about about">
-        <div class="about__container container">
-          <h2 class="about__title">О компании</h2>
-          <div class="about__wrapper">
-            <div class="about__wrapper--grid1">
-              <p class="about__text about__text--grid1">Проектно-конструкторское бюро FastProject оказывает услуги по разработке конструкторской, технологической и эксплуатационной документации. Мы работаем как на аутсорсинге, так и проектно.</p>
-              <p class="about__text about__text--grid1">Конструкторское бюро FastProject реализовывает проекты в сфере машиностроения, охранных и противопожарных систем. Мы осуществляем полный цикл создания нового продукта — от идеи до производства:</p>
-              <ul class="about__text about__text--grid1">
-                <li>помогаем с подготовкой технического задания,</li>
-                <li>подготавливаем техническую документацию,</li>
-                <li>разрабатываем рабочую документацию, </li>
-                <li>составляем проектно-сметную документацию,</li>
-                <li>согласовываем в государственных органах и госэкспертизе,</li>
-                <li>производим техническое сопровождение проекта.</li>
-              </ul>
-            </div>
-            <div class="about__wrapper--grid2">
-              <p class="about__text about__text--grid2">Большинство вопросов и задач решаем дистанционно, а также выезжаем на объект. <br><br>Наши инженеры имеют профильное образование и богатый опыт ( от 15 лет) проектирования и запуска в производство. Мы всегда находим оптимальное решения поставленных задач, обеспечиваем соответствие качества продукции и услуг ожиданиям заказчика, договорным обязательствам, нормативно-технической документации и международным стандартам!<br><br>FastProject входит в группу компаний Fastgroup, которая начала свою историю с 1995 года и зарекомендовала себя не только на территории РФ, но и за ее пределами. <br><br>Имеем свое представительство в крупных городах России : Москва, Санкт-Петербург, а так же и за границей: Объединённые Арабские Эмираты (Дубай), Казахстан (Астана, Атырау, Кызыл-Орда, Актау, Уральск, Актобе). <br><br>Собственные производственные базы в: Москве, Твери, Новосибирске, Алмате, Атыра.</p>
-            </div>
-          </div>  
-        </div>
-      </section>
-      <section class="main__partners partners">
-        <div class="partners__container container">
-          <h2 class="partners__title">Нам доверяют</h2>
-          <ul class="partners__list">
-            <li class="partners__items">
-              <img class="partners__logo" src="/assets/img/kgm.svg" alt="kgm" width="146" height="39">
-            </li>
-            <li class="partners__items">
-              <img class="partners__logo" src="/assets/img/trasneft.svg" alt="kgm" width="120" height="35">
-            </li>
-            <li class="partners__items">
-              <img class="partners__logo" src="/assets/img/kgm.svg" alt="kgm" width="146" height="39">
-            </li>
-            <li class="partners__items">
-              <img class="partners__logo" src="/assets/img/trasneft.svg" alt="kgm" width="120" height="35">
-            </li>
-            <li class="partners__items">
-              <img class="partners__logo" src="/assets/img/kgm.svg" alt="kgm" width="146" height="39">
-            </li>
-            <li class="partners__items">
-              <img class="partners__logo" src="/assets/img/trasneft.svg" alt="kgm" width="120" height="35">
-            </li>
-          </ul>
-          <p class="partners__text">Мы уже работаем с крупными компаниями как Газпром, Роснефть, Транснефть, КазТрансОил, CPPE, CNPC, WPK, KGM и др. и открыты для сотрудничества как с компаниями и промышленными организациями, так и с частными лицами по всей России и за ее пределами.</p>
-        </div>
-      </section>
-      <section class="main__documents documents">
-        <div class="documents__container container">
-          <h2 class="documents__title">Компания FastProject имеет</h2>
-          <ul class="documents__list">
-            <li class="documents__item">Сертификат качества ИСО 9001-2015</li>
-            <li class="documents__item">Лицензию «Проектирования систем противопожарной защиты»</li>
-            <li class="documents__item">Лицензию «Производство и реализация противопожарной техники и оборудования»</li>
-            <li class="documents__item">Лицензию «Экспертиза технических решений»</li>
-            <li class="documents__item">Лицензию «Выполнение строительных и монтажных работ»</li>
-            <li class="documents__item">Лицензию «Выполнение технического обслуживания противопожарных средств»</li>
-          </ul>
-        </div>
-      </section>
-      <section class="main__news news">
-        <div class="news__container container">
-          <h2 class="news__title">Новости компании</h2>
-          <ul class="news__list">
-            <li class="news__item">
-              <div class="news__item-img-wrapper">
-                <img src="/assets/img/new1.png" alt="Последняя новость" class="news__img" width="130" height="130">
-              </div>
-              <div class="news__wrapper">
-                <p class="news__date">29 сентября 2023</p>
-                <h3 class="news__subtitle">Техзадание для реверс-инжиниринга: план создания</h3>
-                <p class="news__text">Расскажем, что должно быть в техническом задании, если вам нужен реверс-инжиниринг.</p>
-              </div>
-            </li>
-          </ul>
-          <ul class="news__slider-list">
-            <li class="news__slider-item">
-              <button class="news__button news__button--prev">
-                <span class="visually-hidden">Предыдущая новость</span>
-              </button>
-            </li>
-            <li class="news__slider-item">
-              <a href="#" class="news__slider-link btn-link">Смотреть все новости</a>
-            </li>
-            <li class="news__slider-item">
-              <button class="news__button news__button--next">
-                <span class="visually-hidden">Следущая новость</span>
-              </button>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="main__form form">
+      <section class="constructor__form form">
         <div class="form__container container">
-          <h2 class="form__title">Напишите нам</h2>
+          <h2 class="form__title">Обсудить проект</h2>
           <p class="form__text">Заполните форму, и наш менеджер свяжется с Вами и подробно проконсультирует</p>
           <form action="#" class="form__date" method="post">
             <fieldset class="form__fieldset">
@@ -539,14 +390,12 @@
           </form>
         </div>
       </section>
-      <section class="main__contacts contacts">
+      <section class="constructor__contacts contacts">
         <div class="contacts__container">
           <h2 class="visually-hidden">Контакты</h2>
           <div class="contacts__wrapper-map">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab3c428983da83a1f1b212c6d161d2dbb2bbd0821e318685e11391092c0018c9f&amp;source=constructor" width="100%" height="360" frameborder="0" title ="Адрес компании FastProject"></iframe>
-            <img class="contacts__img contacts__img--nojs" src="/assets/img/ya-map.jpeg" srcset="/assets/img/ya-map2x.jpeg" alt="Контакты" width="360" height="360">
-            <!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1996.7929883483553!2d30.3172265!3d59.9687573!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1643282831751!5m2!1sru!2sru" allowfullscreen="" title="Адресс html Academy" class="contacts__map"></iframe>
-            -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1996.7929883483553!2d30.3172265!3d59.9687573!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1643282831751!5m2!1sru!2sru" allowfullscreen="" title="Адресс html Academy" class="contacts__map"></iframe>
+            <img class="contacts__img contacts__img--nojs" src="/assets/img/google_map.jpg" srcset="/assets/img/google_map@2x.jpg" alt="Контакты" width="360" height="360">
           </div>
         </div>
       </section>
@@ -592,27 +441,7 @@
         <div class="footer__wrapper-info">
           <a href="tel:89055600075" class="footer__link">8 (905) 560 00 75</a>
           <button class="footer__callback-phone btn-link">Заказать обратный звонок</button>
-          <div class="footer__wrapper-socials">
-            <a href="https://vk.com/fastproj77" class="footer__social">
-              <svg class="footer__social-vk" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.47157 13.8265H10.1883C10.1883 13.8265 10.4059 13.8009 10.5171 13.6709C10.6184 13.5522 10.6152 13.3275 10.6152 13.3275C10.6152 13.3275 10.602 12.2812 11.0469 12.1268C11.488 11.9748 12.0525 13.1386 12.6525 13.5862C13.1056 13.9255 13.4503 13.8504 13.4503 13.8504L15.0525 13.8265C15.0525 13.8265 15.8913 13.7704 15.4935 13.0533C15.4618 12.9949 15.2618 12.5227 14.3018 11.5533C13.2968 10.5386 13.4322 10.7019 14.642 8.94678C15.3796 7.87843 15.6739 7.2257 15.5818 6.94597C15.4941 6.67952 14.9522 6.75044 14.9522 6.75044L13.1483 6.76238C13.1483 6.76238 13.0141 6.7433 12.915 6.80708C12.8179 6.87085 12.7549 7.01816 12.7549 7.01816C12.7549 7.01816 12.47 7.84447 12.0891 8.5485C11.2853 10.033 10.9648 10.1111 10.8332 10.0193C10.527 9.80465 10.6042 9.15659 10.6042 8.6958C10.6042 7.25726 10.8053 6.65751 10.2135 6.50186C10.0178 6.45056 9.8721 6.41667 9.37132 6.41067C8.72749 6.40413 8.18226 6.41247 7.87322 6.57758C7.66824 6.68613 7.50992 6.93056 7.60692 6.94424C7.72582 6.96205 7.99598 7.0241 8.13891 7.23578C8.3247 7.50944 8.31703 8.12407 8.31703 8.12407C8.31703 8.12407 8.42385 9.81719 8.06937 10.0276C7.82607 10.1719 7.49238 9.87803 6.77675 8.53062C6.40903 7.8408 6.13237 7.07833 6.13237 7.07833C6.13237 7.07833 6.07921 6.9359 5.98386 6.86011C5.86828 6.76705 5.70554 6.73843 5.70554 6.73843L3.99155 6.75037C3.99155 6.75037 3.73402 6.75758 3.63922 6.87919C3.55595 6.98887 3.63321 7.21189 3.63321 7.21189C3.63321 7.21189 4.97568 10.6292 6.49573 12.3509C7.88972 13.9296 9.47163 13.8264 9.47163 13.8264L9.47157 13.8265Z"/>
-                <rect x="0.5" y="0.5" width="19" height="19" rx="5.9"/>
-              </svg>
-            </a>
-            <a href="https://wa.me/79055600075" class="footer__social">
-              <svg class="footer__social-wa" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.1006 1.44685C7.66686 1.44685 5.46233 2.43237 3.87088 4.02381C2.27514 5.61526 1.29391 7.82123 1.29391 10.2578C1.29391 11.0786 1.40708 11.8765 1.61192 12.6213C1.82535 13.3949 2.14908 14.1311 2.55447 14.8087C2.63182 14.9347 2.63898 15.0823 2.59457 15.2112L1.218 19.2994L5.46949 17.9371C5.60701 17.8927 5.74739 17.9128 5.86055 17.9844C6.49799 18.3354 7.18269 18.609 7.89462 18.7938C8.59079 18.9742 9.33279 19.0716 10.102 19.0716C12.5357 19.0716 14.7403 18.0861 16.3317 16.4947C17.926 14.9032 18.9087 12.6973 18.9087 10.265C18.9087 7.83268 17.9217 5.62672 16.3317 4.03098C14.736 2.43523 12.5343 1.44971 10.102 1.44971L10.1006 1.44685ZM3.20193 3.35916C4.971 1.59152 7.41045 0.5 10.1006 0.5C12.795 0.5 15.2359 1.59582 16.9992 3.35916C18.7683 5.1268 19.8584 7.56768 19.8584 10.2578C19.8584 12.9451 18.7712 15.3802 17.0064 17.1436L16.9978 17.1522C15.2302 18.9198 12.7893 20.0113 10.0992 20.0113C9.26117 20.0113 8.44325 19.9025 7.66256 19.7005C6.92485 19.5114 6.22009 19.2364 5.56403 18.8912L0.614936 20.4769C0.521827 20.5055 0.417259 20.5098 0.321285 20.4769C0.0763372 20.3924 -0.0568807 20.1259 0.0233362 19.881L1.63054 15.1052C1.23232 14.4119 0.918614 13.6599 0.696585 12.8692C0.463096 12.0355 0.338474 11.1531 0.338474 10.2549C0.338474 7.56911 1.4257 5.13253 3.19047 3.36489L3.19763 3.35629L3.20193 3.35916Z"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.33745 5.56114C7.15319 5.11966 7.01454 5.10506 6.7336 5.08864C6.63508 5.08317 6.52927 5.0777 6.41434 5.0777C6.04948 5.0777 5.67002 5.18533 5.44563 5.41702C5.16833 5.69797 4.47144 6.36567 4.47144 7.73574C4.47144 9.10033 5.46569 10.423 5.60434 10.6072C5.74299 10.7915 7.54725 13.6392 10.3494 14.8032C12.5386 15.7098 13.1862 15.6278 13.6879 15.5219C14.4103 15.3632 15.3298 14.8287 15.5542 14.1774C15.7841 13.5316 15.7841 12.9734 15.7184 12.8584C15.6509 12.7453 15.4666 12.6742 15.1857 12.5355C14.9084 12.3987 13.5438 11.7237 13.2884 11.6325C13.033 11.5394 12.7958 11.5723 12.6006 11.8368C12.3288 12.2108 12.0734 12.5957 11.8526 12.8274C11.683 13.0062 11.4112 13.0317 11.1813 12.9351C10.873 12.8019 10.0064 12.499 8.94467 11.5559C8.12008 10.8225 7.56001 9.91033 7.4013 9.63303C7.24258 9.35574 7.3867 9.18607 7.5144 9.0383C7.65853 8.86317 7.78623 8.74094 7.92305 8.57675C8.0617 8.41256 8.13832 8.32499 8.23136 8.14256C8.3244 7.9583 8.26238 7.76857 8.18941 7.62445C8.11826 7.4858 7.56366 6.12303 7.3338 5.56297L7.33745 5.56114Z"/>
-              </svg>
-            </a>
-            <a href="https://t.me/fastproj" class="footer__social">
-              <svg class="footer__social-tg" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14.0219 15.8545L15.9683 5.72411C15.9683 5.0492 15.2671 5.38607 15.2671 5.38607L4.14235 9.88352C4.14235 9.88352 3.62517 10.0662 3.66613 10.4034C3.70709 10.7405 4.1287 10.895 4.1287 10.895L6.94509 12.0599L13.6365 7.95781C13.4322 8.15459 8.35175 12.9047 8.35175 12.9047L8.16515 15.7406C8.31697 15.8089 8.45569 15.7 8.45569 15.7L10.2323 14.0283L13.0011 16.2199C13.7499 16.5565 14.0219 15.8545 14.0219 15.8545Z"/>
-                <rect x="0.5" y="1" width="19" height="19" rx="5.9"/>
-              </svg>              
-            </a>
-            <span>мы в соцсетях</span>
-          </div>
+          <a href="https://vk.com" class="footer__social">мы в соцсетях</a>
           <a href="mailto:info@fastproj.ru" class="footer__link-email">info@fastproj.ru</a>
         </div>
         <div class="footer__wrapper-policy">
@@ -687,8 +516,8 @@
         </div>
       </div>
     </div>
-    <script src="/assets/js/main.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
-    <!-- <script src="/assets/js/swipper_call.js?[[$version]]"></script> -->
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="/assets/js/swipper_call.js?[[$version]]"></script>
   </body>
 </html>

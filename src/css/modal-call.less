@@ -1,0 +1,149 @@
+.modal-call {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(228, 228, 228, 0.9);
+  z-index: 999;
+}
+
+.modal-call__wrapper {
+  position: relative;
+  margin: auto;
+  background-color: var(--colorLGray);
+  border-radius: 15px;
+
+  @media (min-width: @t-width) {
+    border-radius: 36px;
+  }
+}
+
+.modal-call__container {
+  padding: 20px 20px 40px 30px;
+
+  @media (min-width: @t-width) {
+    padding: 40px 40px 76px 90px;
+  }
+}
+
+.modal-call__button {
+  display: block;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border: none;
+  background-color: transparent;
+  background-image: url(/assets/img/close-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  outline: none;
+  margin-left: auto;
+
+  @media (min-width: @t-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.theme_dark .modal-call__button {
+  background-image: url(/assets/img/close-icon-dark.svg);
+}
+
+.modal-call__title {
+  font-size: 20px;
+  line-height: 26px;
+  padding-right: 20px;
+  margin-top: 10px;
+
+  @media (min-width: @t-width) {
+    padding-right: 60px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.modal-call__form {
+  padding-right: 20px;
+  display: flex;
+  flex-wrap: no-wrap;
+  box-sizing: border-box;
+  flex-direction: column;
+
+  @media (min-width: @t-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-right: 60px;
+  }
+}
+
+.modal-call__name,
+.modal-call__phone,
+.modal-call__date {
+  font-size: 12px;
+  line-height: 12px;
+  padding: 12px;
+  border-radius: 5px;
+  color: var(--colorDark);
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--colorGray);
+  background-color: transparent;
+
+  @media (min-width: @t-width) {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 16px;
+    border-radius: 10px;
+  }
+}
+
+.modal-call__name::placeholder,
+.modal-call__phone::placeholder,
+.modal-call__date::placeholder {
+  color: var(--colorGray);
+}
+
+.modal-call__label-name {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.modal-call__label-phone,
+.modal-call__label-date {
+  width: 100%;
+  margin-top: 10px;
+  box-sizing: border-box;
+
+  @media (min-width: @t-width) {
+    margin-top: 20px;
+    width: 50%;
+  }
+}
+
+.modal-call__label-phone {
+  @media (min-width: @t-width) {
+    padding-right: 10px;
+  }
+}
+
+.modal-call__label-date {
+  @media (min-width: @t-width) {
+    padding-left: 10px;
+  }
+}
+
+.modal-call__submit {
+  margin-top: 20px;
+
+  @media (min-width: @t-width) {
+    margin-left: auto;
+    margin-top: 30px;
+  }
+}
+
+.modal-call--close {
+  display: none;
+}

@@ -1,0 +1,43 @@
+.message {
+  background-color: var(--colorLGray);
+}
+
+.message__container {
+  
+
+  @media (min-width: @d-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.message__title {
+  width: 100%;
+}
+
+.message__text {
+  padding: 0;
+  margin: 20px 0 0 0;
+
+  @media (min-width: @d-width) {
+    margin: 5px 0 0 0;
+  }
+}
+
+.message__button {
+  margin-top: 10px;
+
+  @media (min-width: @t-width) {
+    margin-top: 50px;
+  }
+
+  @media (min-width: @d-width) {
+    margin-top: -30px;
+    margin-left: auto;
+    padding: 18px 78px 18px 28px;
+  }
+}
+
+.message__button--width {
+  width: 100%;
+}

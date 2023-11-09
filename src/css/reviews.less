@@ -1,0 +1,153 @@
+.reviews {
+  background-color: var(--colorLGray);
+}
+
+.reviews__title {
+  text-align: center;
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.reviews__list-star {
+  display: flex;
+  justify-content: space-between;
+  width: 184px;
+  margin: 40px auto 0 auto;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: @t-width) {
+    margin-top: 50px;
+  }
+}
+
+.reviews__star path {
+  stroke: var(--colorDark);
+}
+
+.reviews__star--rate {
+  fill: var(--colorDark);
+}
+
+.reviews__text {
+  margin: 24px 0 0 0;
+  padding: 0 52px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  font-weight: 400;
+  line-height: 22px;
+
+  @media (min-width: @t-width) {
+    font-size: 18px;
+    line-height: 29px;
+    margin: 48px 0 0 0;
+    padding: 0 35px;
+  }
+
+  @media (min-width: @d-width) {
+    padding: 0 218px;
+  }
+}
+
+.reviews__author,
+.reviews__date {
+  text-align: center;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+
+  @media (min-width: @t-width) {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+.reviews__author {
+  margin: 26px 0 0 0;
+
+  @media (min-width: @t-width) {
+    margin: 48px 0 0 0;
+  }
+}
+
+.reviews__company {
+  margin: 4px 0 0 0;
+  text-align: center;
+  font-size: 10px;
+  line-height: 12px;
+  color: var(--colorBlue);
+
+  @media (min-width: @t-width) {
+    font-size: 12px;
+    line-height: 15px;
+    margin: 6px 0 0 0;
+  }
+
+  @media (min-width: @d-width) {
+    margin: 3px 0 0 0;
+  }
+}
+
+.reviews__company a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.reviews__date {
+  margin: 11px 0 0 0;
+
+  @media (min-width: @t-width) {
+    margin: 16px 0 0 0;
+  }
+
+  @media (min-width: @d-width) {
+    margin: 11px 0 0 0;
+  }
+}
+
+.reviews__pagination-list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0 30px;
+  position: absolute;
+  top: calc(50%);
+  left: 0;
+  right: 0;
+
+  @media (min-width: @t-width) {
+     padding: 0 50px;
+  }
+}
+
+
+.reviews__pagination-button {
+  border: none;
+  background-color: var(--colorGray);
+}
+
+.reviews__pagination-button--prev,
+.reviews__pagination-button--next {
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  background-image: url("/assets/img/arrow_left.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: @t-width) {
+    width: 50px;
+    height: 50px;
+    background-image: url("/assets/img/Arrow_rew.svg");
+  }
+}
+
+.reviews__pagination-button--next {
+  transform: rotate(180deg);
+  
+}
