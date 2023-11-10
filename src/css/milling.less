@@ -1,6 +1,19 @@
-
-.millin__container {
-  
+.milling {
+  @media (min-width: @t-width) {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    background-image: url("/assets/img/bg_lp_ekran1.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    padding-top: 20px;
+    padding-bottom: 228px;
+    min-height: 837px;
+    padding-left: 120px;
+    padding-right: 120px;
+    margin-top: 40px;
+  }
 }
 
 .milling__wrapper-title {
@@ -10,9 +23,19 @@
   background-image: url("/assets/img/bg_lp_ekran1.jpeg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto 100%;
+  background-size: cover;
   padding-top: 20px;
   padding-bottom: 228px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media (min-width: @t-width) {
+    background-image: none;
+    background-size: auto;
+    width: 50%;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .milling__title {
@@ -21,6 +44,12 @@
   font-weight: 400;
   line-height: 40px;
   padding-right: 80px;
+
+  @media (min-width: @t-width) {
+    margin-top: 81px;
+    font-size: 48px;
+    line-height: 64px;
+  }
 }
 
 .milling__description {
@@ -30,10 +59,45 @@
   color: var(--colorBlue);
   margin-top: 14px;
   padding-right: 100px;
+
+  @media (min-width: @t-width) {
+    font-size: 21px;
+    line-height: 28px;
+    padding-right: 40%;
+  }
 }
 
 .milling__link {
   margin-top: 26px;
+  letter-spacing: 0.04em;
+  padding: 14px 34px 14px 22px;
+  position: relative;
+  z-index: 3;
+
+  @media (min-width: @t-width) {
+    margin-top: 49px;
+    padding: 18px 55px 18px 27px;
+  }
+}
+
+.milling__link::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 21px;
+  width: 4px;
+  height: 9px;
+  background-image: url("/assets/img/strelka.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: @t-width) {
+    top: 20px;
+    right: 27px;  
+    width: 16px;
+    height: 16px;
+    background-image: url("/assets/img/icon_button-arrow.svg");
+  }
 }
 
 .milling__form {
@@ -42,21 +106,49 @@
   padding-bottom: 60px;
   border-radius: 20px 20px 0px 0px;
   margin-top: -20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+
+  @media (min-width: @t-width) {
+    width: 50%;
+    padding: 50px;
+    margin-top: 81px;
+    border-radius: 36px;
+  }
 }
 
 .milling__form {
   .form__title {
     color: var(--colorDark);
     font-size: 20px;
+    font-weight: 500;
+
+    @media (min-width: @t-width) {
+      font-size: 24px;
+    }
   }
 
   .form__text {
     color: var(--colorDark);
+    font-weight: 500;
+
+    @media (min-width: @t-width) {
+      font-size: 14px;
+    }
   }
 
   .form__input,
   .form__textarea {
     border: 1px solid var(--border);
     color: var(--colorDGray);
+  }
+
+  .form__label--email,
+  .form__label--phone {
+    @media (min-width: @t-width) {
+      min-width: auto;
+      flex-basis: auto;
+    }
   }
 }

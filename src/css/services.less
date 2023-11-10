@@ -46,6 +46,14 @@
   text-decoration: none;
 }
 
+.services__link--grid {
+  @media (min-width: @t-width) {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr min-content;
+  }
+}
+
 .services__item {
   counter-increment: numper-list;
 }
@@ -71,6 +79,13 @@
   border-radius: 10px;
 }
 
+.services__img--heigth {
+  @media (min-width: @t-width) {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
 span.services__text {
   margin-top: -35px;
   margin-left: 10px;
@@ -83,6 +98,10 @@ span.services__text {
 span.services__text--margin {
   margin-top: 14px;
   margin-left: 0;
+
+  @media (min-width: @t-width) {
+    margin-top: 24px;
+  }
 }
 
 .services__item h3.services__text::before,

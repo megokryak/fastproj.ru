@@ -46,6 +46,13 @@
   }
 }
 
+.article__advantages--width {
+  @media (min-width: @t-width) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 .article__message {
   padding-top: 10px;
   padding-bottom: 40px;
@@ -59,6 +66,12 @@
     width: 100%;
     padding-top: 95px;
     padding-bottom: 355px;
+  }
+}
+
+.article__message--bottom {
+  @media (min-width: @d-width) {
+    padding-bottom: 95px;
   }
 }
 
